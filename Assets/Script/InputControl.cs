@@ -45,11 +45,12 @@ public class InputControl : MonoBehaviour
     public TextMeshProUGUI SendingMessage;
 
     public string byteString;
+    public byte[] dataToSend;
 
     private byte[] _inputDataBytes;
     private const int DATA_SIZE = 6;
 
-    // _buttonByte1—p
+    // _buttonByte1ï¿½p
     private const byte BIT_UP = 0b00000001;     // 1
     private const byte BIT_LEFT = 0b00000010;   // 2
     private const byte BIT_DOWN = 0b00000100;   // 4
@@ -59,7 +60,7 @@ public class InputControl : MonoBehaviour
     private const byte BIT_CROSS = 0b01000000;  // 64
     private const byte BIT_CIRCLE = 0b10000000; // 128
 
-    // _buttonByte2—p
+    // _buttonByte2ï¿½p
     private const byte BIT_LSB = 0b00000001;    // 1
     private const byte BIT_RSB = 0b00000010;    // 2
     private const byte BIT_L1 = 0b00000100;     // 4
@@ -72,7 +73,7 @@ public class InputControl : MonoBehaviour
     {
         _gameInputs = new GameInputs();
 
-        // ActionƒCƒxƒ“ƒg“o˜^
+        // Actionï¿½Cï¿½xï¿½ï¿½ï¿½gï¿½oï¿½^
         _gameInputs.Control.LeftStick.started += OnLeftStick;
         _gameInputs.Control.LeftStick.performed += OnLeftStick;
         _gameInputs.Control.LeftStick.canceled += OnLeftStick;
@@ -123,8 +124,8 @@ public class InputControl : MonoBehaviour
         _gameInputs.Control.R2.performed += OnR2;
         _gameInputs.Control.R2.canceled += EndR2;
 
-        // Input Action‚ğ‹@”\‚³‚¹‚é‚½‚ß‚É‚ÍA
-        // —LŒø‰»‚·‚é•K—v‚ª‚ ‚é
+        // Input Actionï¿½ï¿½ï¿½@ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½é‚½ï¿½ß‚É‚ÍA
+        // ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         _gameInputs.Enable();
 
         _inputDataBytes = new byte[DATA_SIZE];
@@ -304,11 +305,11 @@ public class InputControl : MonoBehaviour
     {
         if (setState)
         {
-            targetByte |= bitMask; // ƒrƒbƒg‚ğƒZƒbƒg (OR‰‰Z)
+            targetByte |= bitMask; // ï¿½rï¿½bï¿½gï¿½ï¿½ï¿½Zï¿½bï¿½g (ORï¿½ï¿½ï¿½Z)
         }
         else
         {
-            targetByte &= (byte)~bitMask; // ƒrƒbƒg‚ğƒNƒŠƒA (AND NOT‰‰Z)
+            targetByte &= (byte)~bitMask; // ï¿½rï¿½bï¿½gï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½A (AND NOTï¿½ï¿½ï¿½Z)
         }
     }
 
@@ -328,9 +329,8 @@ public class InputControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        byte[] dataToSend = GetPackedInputData();
+        dataToSend = GetPackedInputData();
 
-        byteString = BitConverter.ToString(dataToSend).Replace("-", "");
         SendingMessage.text = "Sending: " + byteString;
     }
 }

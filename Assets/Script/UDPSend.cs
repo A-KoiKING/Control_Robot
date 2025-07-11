@@ -51,8 +51,7 @@ public class UDPSend : MonoBehaviour
 
     public void Send()
     {
-        var message = Encoding.UTF8.GetBytes(inputControl.byteString);
-        client.Send(message, message.Length);
+        client.Send(inputControl.dataToSend, inputControl.dataToSend.Length);
     }
 
     public void OnConnect()
