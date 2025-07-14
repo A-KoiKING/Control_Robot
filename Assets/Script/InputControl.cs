@@ -331,6 +331,7 @@ public class InputControl : MonoBehaviour
     {
         dataToSend = GetPackedInputData();
 
+        byteString = BitConverter.ToString(dataToSend).Replace("-", "");
         SendingMessage.text = "Sending: " + byteString;
     }
 }
