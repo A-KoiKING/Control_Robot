@@ -46,6 +46,53 @@ public class UDPSend : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKey(KeyCode.LeftShift))
+        {
+            if (IP_1_InputField.isFocused)
+            {
+                Port_InputField.ActivateInputField();
+            }
+            if (IP_2_InputField.isFocused)
+            {
+                IP_1_InputField.ActivateInputField();
+            }
+            if (IP_3_InputField.isFocused)
+            {
+                IP_2_InputField.ActivateInputField();
+            }
+            if (IP_4_InputField.isFocused)
+            {
+                IP_3_InputField.ActivateInputField();
+            }
+            if (Port_InputField.isFocused)
+            {
+                IP_4_InputField.ActivateInputField();
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (IP_1_InputField.isFocused)
+            {
+                IP_2_InputField.ActivateInputField();
+            }
+            if (IP_2_InputField.isFocused)
+            {
+                IP_3_InputField.ActivateInputField();
+            }
+            if (IP_3_InputField.isFocused)
+            {
+                IP_4_InputField.ActivateInputField();
+            }
+            if (IP_4_InputField.isFocused)
+            {
+                Port_InputField.ActivateInputField();
+            }
+            if (Port_InputField.isFocused)
+            {
+                IP_1_InputField.ActivateInputField();
+            }
+        }
+
         Send();
     }
 
