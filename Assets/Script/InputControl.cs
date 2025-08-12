@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using System;
 using static UnityEngine.EventSystems.EventTrigger;
 using TMPro;
+using System.Linq;
 
 public class InputControl : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class InputControl : MonoBehaviour
 
     [SerializeField] private byte _buttonByte1 = 0;
     [SerializeField] private byte _buttonByte2 = 0;
+    [SerializeField] private byte _buttonByte3 = 0;
 
     [SerializeField] private byte _LeftValueX;
     [SerializeField] private byte _LeftValueY;
@@ -43,37 +45,43 @@ public class InputControl : MonoBehaviour
     [SerializeField] private byte _R2;
 
     public TextMeshProUGUI SendingMessage;
+    public TextMeshProUGUI LastState;
 
     public string byteString;
+    public string binaryString;
     public byte[] dataToSend;
 
     private byte[] _inputDataBytes;
-    private const int DATA_SIZE = 6;
+    private const int DATA_SIZE = 7;
 
-    // _buttonByte1�p
-    private const byte BIT_UP = 0b00000001;     // 1
-    private const byte BIT_LEFT = 0b00000010;   // 2
-    private const byte BIT_DOWN = 0b00000100;   // 4
-    private const byte BIT_RIGHT = 0b00001000;  // 8
+    // _buttonByte1
+    private const byte BIT_UP = 0b00000001;       // 1
+    private const byte BIT_LEFT = 0b00000010;     // 2
+    private const byte BIT_DOWN = 0b00000100;     // 4
+    private const byte BIT_RIGHT = 0b00001000;    // 8
     private const byte BIT_TRIANGLE = 0b00010000; // 16
-    private const byte BIT_SQUARE = 0b00100000; // 32
-    private const byte BIT_CROSS = 0b01000000;  // 64
-    private const byte BIT_CIRCLE = 0b10000000; // 128
+    private const byte BIT_SQUARE = 0b00100000;   // 32
+    private const byte BIT_CROSS = 0b01000000;    // 64
+    private const byte BIT_CIRCLE = 0b10000000;   // 128
 
-    // _buttonByte2�p
-    private const byte BIT_LSB = 0b00000001;    // 1
-    private const byte BIT_RSB = 0b00000010;    // 2
-    private const byte BIT_L1 = 0b00000100;     // 4
-    private const byte BIT_R1 = 0b00001000;     // 8
-    private const byte BIT_L2 = 0b00010000;     // 16
-    private const byte BIT_R2 = 0b00100000;     // 32
+    // _buttonByte2
+     // private const byte BIT_AUTO1 = 0b00000011;  // 3
+    private const byte BIT_LSB = 0b00000100;      // 4
+    private const byte BIT_RSB = 0b00001000;      // 8
+    private const byte BIT_L1 = 0b00010000;       // 16
+    private const byte BIT_R1 = 0b00100000;       // 32
+    private const byte BIT_L2 = 0b01000000;       // 64
+    private const byte BIT_R2 = 0b10000000;       // 128
+
+    // _buttonByte2
+     // private const byte BIT_AUTO2 = 0b11000000;  // 172
 
     // Start is called before the first frame update
     void Start()
     {
         _gameInputs = new GameInputs();
 
-        // Action�C�x���g�o�^
+        // Action Event Entry
         _gameInputs.Control.LeftStick.started += OnLeftStick;
         _gameInputs.Control.LeftStick.performed += OnLeftStick;
         _gameInputs.Control.LeftStick.canceled += OnLeftStick;
@@ -124,8 +132,40 @@ public class InputControl : MonoBehaviour
         _gameInputs.Control.R2.performed += OnR2;
         _gameInputs.Control.R2.canceled += EndR2;
 
-        // Input Action���@�\�����邽�߂ɂ́A
-        // �L��������K�v������
+        _gameInputs.Control.Auto_1.performed += OnAuto1;
+        _gameInputs.Control.Auto_1.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_2.performed += OnAuto2;
+        _gameInputs.Control.Auto_2.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_3.performed += OnAuto3;
+        _gameInputs.Control.Auto_3.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_4.performed += OnAuto4;
+        _gameInputs.Control.Auto_4.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_5.performed += OnAuto5;
+        _gameInputs.Control.Auto_5.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_6.performed += OnAuto6;
+        _gameInputs.Control.Auto_6.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_7.performed += OnAuto7;
+        _gameInputs.Control.Auto_7.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_8.performed += OnAuto8;
+        _gameInputs.Control.Auto_8.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_9.performed += OnAuto9;
+        _gameInputs.Control.Auto_9.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_10.performed += OnAuto10;
+        _gameInputs.Control.Auto_10.canceled += EndAuto;
+
+        _gameInputs.Control.Auto_11.performed += OnAuto11;
+        _gameInputs.Control.Auto_11.canceled += EndAuto;
+
+        // Input Action Enable
         _gameInputs.Enable();
 
         _inputDataBytes = new byte[DATA_SIZE];
@@ -301,15 +341,111 @@ public class InputControl : MonoBehaviour
         SetButtonBit(ref _buttonByte2, BIT_R2, false);
     }
 
+    private void OnAuto1(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte3 |= 0b01000000;
+        LastState.text = "1";
+    }
+
+    private void OnAuto2(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte3 |= 0b10000000;
+        LastState.text = "2";
+    }
+
+    private void OnAuto3(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte3 |= 0b11000000;
+        LastState.text = "3";
+    }
+
+    private void OnAuto4(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000001;
+        LastState.text = "4";
+    }
+
+    private void OnAuto5(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000001;
+        _buttonByte3 |= 0b01000000;
+        LastState.text = "5";
+    }
+
+    private void OnAuto6(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000001;
+        _buttonByte3 |= 0b10000000;
+        LastState.text = "6";
+    }
+
+    private void OnAuto7(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000001;
+        _buttonByte3 |= 0b11000000;
+        LastState.text = "7";
+    }
+
+    private void OnAuto8(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000010;
+        _buttonByte3 |= 0b00000000;
+        LastState.text = "8";
+    }
+
+    private void OnAuto9(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000010;
+        _buttonByte3 |= 0b01000000;
+        LastState.text = "9";
+    }
+
+    private void OnAuto10(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000010;
+        _buttonByte3 |= 0b10000000;
+        LastState.text = "10";
+    }
+
+    private void OnAuto11(InputAction.CallbackContext context)
+    {
+        ResetAuto();
+        _buttonByte2 |= 0b00000010;
+        _buttonByte3 |= 0b11000000;
+        LastState.text = "11";
+    }
+
+    private void EndAuto(InputAction.CallbackContext context)
+    {
+        _buttonByte2 &= 0b11111100;
+        _buttonByte3 &= 0b00111111;
+    }
+
+    private void ResetAuto()
+    {
+        _buttonByte2 &= 0b11111100;
+        _buttonByte3 &= 0b00111111;
+    }
+
     private void SetButtonBit(ref byte targetByte, byte bitMask, bool setState)
     {
         if (setState)
         {
-            targetByte |= bitMask; // �r�b�g���Z�b�g (OR���Z)
+            targetByte |= bitMask; // Bit Set (OR)
         }
         else
         {
-            targetByte &= (byte)~bitMask; // �r�b�g���N���A (AND NOT���Z)
+            targetByte &= (byte)~bitMask; // Bit Clear (AND NOT)
         }
     }
 
@@ -322,6 +458,7 @@ public class InputControl : MonoBehaviour
 
         _inputDataBytes[4] = _buttonByte1;
         _inputDataBytes[5] = _buttonByte2;
+        _inputDataBytes[6] = _buttonByte3;
 
         return _inputDataBytes;
     }
@@ -332,6 +469,10 @@ public class InputControl : MonoBehaviour
         dataToSend = GetPackedInputData();
 
         byteString = BitConverter.ToString(dataToSend).Replace("-", "");
-        SendingMessage.text = "Sending: " + byteString;
+        binaryString = string.Join(" ",
+            dataToSend.Select(b => Convert.ToString(b, 2).PadLeft(8, '0'))
+        );
+
+        SendingMessage.text = byteString + "\n" + binaryString;
     }
 }

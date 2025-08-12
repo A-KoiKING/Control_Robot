@@ -234,6 +234,105 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_1"",
+                    ""type"": ""Button"",
+                    ""id"": ""c86479c1-5d68-4a96-960f-5d394771d3c7"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_2"",
+                    ""type"": ""Button"",
+                    ""id"": ""740b2585-9ca2-4369-b257-ea876f69c5b3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_3"",
+                    ""type"": ""Button"",
+                    ""id"": ""42a634f3-223e-46c6-bcc9-5cf25da7157a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_4"",
+                    ""type"": ""Button"",
+                    ""id"": ""e0319077-f811-4057-b761-b2fc5a4482cf"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_5"",
+                    ""type"": ""Button"",
+                    ""id"": ""f42aebb3-f9ec-477d-9f16-16c5c600b1b1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_6"",
+                    ""type"": ""Button"",
+                    ""id"": ""5360ccc5-1cb0-4ff5-982c-cf5f301919bb"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_7"",
+                    ""type"": ""Button"",
+                    ""id"": ""75042fa9-1390-4efe-8704-f213af1e1f01"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_8"",
+                    ""type"": ""Button"",
+                    ""id"": ""2c3fcdbd-350d-4ab2-9281-90bd2f319a19"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_9"",
+                    ""type"": ""Button"",
+                    ""id"": ""f45bb684-5834-49a2-9468-be029c441c8e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_10"",
+                    ""type"": ""Button"",
+                    ""id"": ""4526ace9-8a58-490f-a05d-f6860138ea06"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Auto_11"",
+                    ""type"": ""Button"",
+                    ""id"": ""04c2c1d9-0939-43b2-bfe3-6bd58d87b034"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -412,6 +511,127 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""action"": ""Down"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a11ee7e1-a270-459d-9d99-b3305c6bbb79"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b810aac0-0a33-4799-a97b-aa4e76e946e6"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""916e240f-16f9-42d5-a680-b7e52a049451"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f9a95d3c-80fa-48ee-96c9-ae77f4e980ba"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""748205f6-8fc1-47b2-b51f-9cc25cee945a"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b5a6cc1e-4cb2-4447-9791-bddc8be3b987"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""40d7d43c-bca0-439e-b002-93902fc587dc"",
+                    ""path"": ""<Keyboard>/7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_7"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2934479d-7a91-4023-9446-148f2b0604f2"",
+                    ""path"": ""<Keyboard>/8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_8"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5edd50f6-7d2c-452b-b826-be8b109e621d"",
+                    ""path"": ""<Keyboard>/9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_9"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8aea37c3-fbb7-472f-b98b-02a9945391a7"",
+                    ""path"": ""<Keyboard>/0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_10"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""47765c37-c57b-4079-a21f-6eb1078c6d30"",
+                    ""path"": ""<Keyboard>/minus"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Auto_11"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -436,6 +656,17 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         m_Control_R1 = m_Control.FindAction("R1", throwIfNotFound: true);
         m_Control_L2 = m_Control.FindAction("L2", throwIfNotFound: true);
         m_Control_R2 = m_Control.FindAction("R2", throwIfNotFound: true);
+        m_Control_Auto_1 = m_Control.FindAction("Auto_1", throwIfNotFound: true);
+        m_Control_Auto_2 = m_Control.FindAction("Auto_2", throwIfNotFound: true);
+        m_Control_Auto_3 = m_Control.FindAction("Auto_3", throwIfNotFound: true);
+        m_Control_Auto_4 = m_Control.FindAction("Auto_4", throwIfNotFound: true);
+        m_Control_Auto_5 = m_Control.FindAction("Auto_5", throwIfNotFound: true);
+        m_Control_Auto_6 = m_Control.FindAction("Auto_6", throwIfNotFound: true);
+        m_Control_Auto_7 = m_Control.FindAction("Auto_7", throwIfNotFound: true);
+        m_Control_Auto_8 = m_Control.FindAction("Auto_8", throwIfNotFound: true);
+        m_Control_Auto_9 = m_Control.FindAction("Auto_9", throwIfNotFound: true);
+        m_Control_Auto_10 = m_Control.FindAction("Auto_10", throwIfNotFound: true);
+        m_Control_Auto_11 = m_Control.FindAction("Auto_11", throwIfNotFound: true);
     }
 
     ~@GameInputs()
@@ -532,6 +763,17 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_Control_R1;
     private readonly InputAction m_Control_L2;
     private readonly InputAction m_Control_R2;
+    private readonly InputAction m_Control_Auto_1;
+    private readonly InputAction m_Control_Auto_2;
+    private readonly InputAction m_Control_Auto_3;
+    private readonly InputAction m_Control_Auto_4;
+    private readonly InputAction m_Control_Auto_5;
+    private readonly InputAction m_Control_Auto_6;
+    private readonly InputAction m_Control_Auto_7;
+    private readonly InputAction m_Control_Auto_8;
+    private readonly InputAction m_Control_Auto_9;
+    private readonly InputAction m_Control_Auto_10;
+    private readonly InputAction m_Control_Auto_11;
     /// <summary>
     /// Provides access to input actions defined in input action map "Control".
     /// </summary>
@@ -608,6 +850,50 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @R2 => m_Wrapper.m_Control_R2;
         /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_1".
+        /// </summary>
+        public InputAction @Auto_1 => m_Wrapper.m_Control_Auto_1;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_2".
+        /// </summary>
+        public InputAction @Auto_2 => m_Wrapper.m_Control_Auto_2;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_3".
+        /// </summary>
+        public InputAction @Auto_3 => m_Wrapper.m_Control_Auto_3;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_4".
+        /// </summary>
+        public InputAction @Auto_4 => m_Wrapper.m_Control_Auto_4;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_5".
+        /// </summary>
+        public InputAction @Auto_5 => m_Wrapper.m_Control_Auto_5;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_6".
+        /// </summary>
+        public InputAction @Auto_6 => m_Wrapper.m_Control_Auto_6;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_7".
+        /// </summary>
+        public InputAction @Auto_7 => m_Wrapper.m_Control_Auto_7;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_8".
+        /// </summary>
+        public InputAction @Auto_8 => m_Wrapper.m_Control_Auto_8;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_9".
+        /// </summary>
+        public InputAction @Auto_9 => m_Wrapper.m_Control_Auto_9;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_10".
+        /// </summary>
+        public InputAction @Auto_10 => m_Wrapper.m_Control_Auto_10;
+        /// <summary>
+        /// Provides access to the underlying input action "Control/Auto_11".
+        /// </summary>
+        public InputAction @Auto_11 => m_Wrapper.m_Control_Auto_11;
+        /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_Control; }
@@ -681,6 +967,39 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             @R2.started += instance.OnR2;
             @R2.performed += instance.OnR2;
             @R2.canceled += instance.OnR2;
+            @Auto_1.started += instance.OnAuto_1;
+            @Auto_1.performed += instance.OnAuto_1;
+            @Auto_1.canceled += instance.OnAuto_1;
+            @Auto_2.started += instance.OnAuto_2;
+            @Auto_2.performed += instance.OnAuto_2;
+            @Auto_2.canceled += instance.OnAuto_2;
+            @Auto_3.started += instance.OnAuto_3;
+            @Auto_3.performed += instance.OnAuto_3;
+            @Auto_3.canceled += instance.OnAuto_3;
+            @Auto_4.started += instance.OnAuto_4;
+            @Auto_4.performed += instance.OnAuto_4;
+            @Auto_4.canceled += instance.OnAuto_4;
+            @Auto_5.started += instance.OnAuto_5;
+            @Auto_5.performed += instance.OnAuto_5;
+            @Auto_5.canceled += instance.OnAuto_5;
+            @Auto_6.started += instance.OnAuto_6;
+            @Auto_6.performed += instance.OnAuto_6;
+            @Auto_6.canceled += instance.OnAuto_6;
+            @Auto_7.started += instance.OnAuto_7;
+            @Auto_7.performed += instance.OnAuto_7;
+            @Auto_7.canceled += instance.OnAuto_7;
+            @Auto_8.started += instance.OnAuto_8;
+            @Auto_8.performed += instance.OnAuto_8;
+            @Auto_8.canceled += instance.OnAuto_8;
+            @Auto_9.started += instance.OnAuto_9;
+            @Auto_9.performed += instance.OnAuto_9;
+            @Auto_9.canceled += instance.OnAuto_9;
+            @Auto_10.started += instance.OnAuto_10;
+            @Auto_10.performed += instance.OnAuto_10;
+            @Auto_10.canceled += instance.OnAuto_10;
+            @Auto_11.started += instance.OnAuto_11;
+            @Auto_11.performed += instance.OnAuto_11;
+            @Auto_11.canceled += instance.OnAuto_11;
         }
 
         /// <summary>
@@ -740,6 +1059,39 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             @R2.started -= instance.OnR2;
             @R2.performed -= instance.OnR2;
             @R2.canceled -= instance.OnR2;
+            @Auto_1.started -= instance.OnAuto_1;
+            @Auto_1.performed -= instance.OnAuto_1;
+            @Auto_1.canceled -= instance.OnAuto_1;
+            @Auto_2.started -= instance.OnAuto_2;
+            @Auto_2.performed -= instance.OnAuto_2;
+            @Auto_2.canceled -= instance.OnAuto_2;
+            @Auto_3.started -= instance.OnAuto_3;
+            @Auto_3.performed -= instance.OnAuto_3;
+            @Auto_3.canceled -= instance.OnAuto_3;
+            @Auto_4.started -= instance.OnAuto_4;
+            @Auto_4.performed -= instance.OnAuto_4;
+            @Auto_4.canceled -= instance.OnAuto_4;
+            @Auto_5.started -= instance.OnAuto_5;
+            @Auto_5.performed -= instance.OnAuto_5;
+            @Auto_5.canceled -= instance.OnAuto_5;
+            @Auto_6.started -= instance.OnAuto_6;
+            @Auto_6.performed -= instance.OnAuto_6;
+            @Auto_6.canceled -= instance.OnAuto_6;
+            @Auto_7.started -= instance.OnAuto_7;
+            @Auto_7.performed -= instance.OnAuto_7;
+            @Auto_7.canceled -= instance.OnAuto_7;
+            @Auto_8.started -= instance.OnAuto_8;
+            @Auto_8.performed -= instance.OnAuto_8;
+            @Auto_8.canceled -= instance.OnAuto_8;
+            @Auto_9.started -= instance.OnAuto_9;
+            @Auto_9.performed -= instance.OnAuto_9;
+            @Auto_9.canceled -= instance.OnAuto_9;
+            @Auto_10.started -= instance.OnAuto_10;
+            @Auto_10.performed -= instance.OnAuto_10;
+            @Auto_10.canceled -= instance.OnAuto_10;
+            @Auto_11.started -= instance.OnAuto_11;
+            @Auto_11.performed -= instance.OnAuto_11;
+            @Auto_11.canceled -= instance.OnAuto_11;
         }
 
         /// <summary>
@@ -892,5 +1244,82 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnR2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_3(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_4(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_5(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_6" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_6(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_7" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_7(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_8" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_8(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_9" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_9(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_10" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_10(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Auto_11" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAuto_11(InputAction.CallbackContext context);
     }
 }
