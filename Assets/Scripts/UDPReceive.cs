@@ -22,10 +22,10 @@ public class UDPReceive : MonoBehaviour
     public string Condition;
     public string ConversionCondition;
 
-    public int M1;
-    public int M2;
-    public int M3;
-    public int M4;
+    public int FL;
+    public int FR;
+    public int RL;
+    public int RR;
 
     private UdpClient udpClient;
 
@@ -37,6 +37,11 @@ public class UDPReceive : MonoBehaviour
 
         udpClient = new UdpClient(R_port);
         udpClient.BeginReceive(OnReceived, udpClient);
+
+        Condition = "X=N, Y=N, R=N";
+        ConversionCondition = "X=N, Y=N, R=N";
+        byteString = "XXXXXXXX";
+        binaryString = "X0000000 X000000 X0000000 X0000000";
     }
 
     private void OnReceived(System.IAsyncResult result)
@@ -61,10 +66,10 @@ public class UDPReceive : MonoBehaviour
                 byte R = getByte[2];
                 byte mFlags = getByte[3];
 
-                M1 = (mFlags >> 7) & 1;
-                M2 = (mFlags >> 6) & 1;
-                M3 = (mFlags >> 5) & 1;
-                M4 = (mFlags >> 4) & 1;
+                FL = (mFlags >> 7) & 1;
+                FR = (mFlags >> 6) & 1;
+                RL = (mFlags >> 5) & 1;
+                RR = (mFlags >> 4) & 1;
 
                 Condition = $"X={X}, Y={Y}, R={R}";
 

@@ -12,10 +12,10 @@ public class ReciveControl : MonoBehaviour
     public TextMeshProUGUI C_T_Message;
     public TextMeshProUGUI R_Message;
 
-    public Image M1;
-    public Image M2;
-    public Image M3;
-    public Image M4;
+    public Image FL;
+    public Image FR;
+    public Image RL;
+    public Image RR;
 
     public Sprite death;
     public Sprite live;
@@ -33,40 +33,40 @@ public class ReciveControl : MonoBehaviour
         C_T_Message.text = UDPReceive.ConversionCondition;
         R_Message.text = UDPReceive.byteString + "\n" + UDPReceive.binaryString;
 
-        if (UDPReceive.M1 == 1)
+        if (UDPReceive.FL == 1)
         {
-            M1.sprite = live;
+            FL.sprite = live;
         }
         else
         {
-            M1.sprite = death;
+            FL.sprite = death;
         }
 
-        if (UDPReceive.M2 == 1)
+        if (UDPReceive.FR == 1)
         {
-            M2.sprite = live;
+            FR.sprite = live;
         }
         else
         {
-            M2.sprite = death;
+            FR.sprite = death;
         }
 
-        if (UDPReceive.M3 == 1)
+        if (UDPReceive.RL == 1)
         {
-            M3.sprite = live;
+            RL.sprite = live;
         }
         else
         {
-            M3.sprite = death;
+            RL.sprite = death;
         }
 
-        if (UDPReceive.M4 == 1)
+        if (UDPReceive.RR == 1)
         {
-            M4.sprite = live;
+            RR.sprite = live;
         }
         else
         {
-            M4.sprite = death;
+            RR.sprite = death;
         }
     }
 }
