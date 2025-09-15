@@ -26,11 +26,11 @@ public class UDPSend : MonoBehaviour
 
     void Start()
     {
-        IP1 = PlayerPrefs.GetInt("IP_1", 192);
-        IP2 = PlayerPrefs.GetInt("IP_2", 168);
-        IP3 = PlayerPrefs.GetInt("IP_3", 10);
-        IP4 = PlayerPrefs.GetInt("IP_4", 123);
-        port = PlayerPrefs.GetInt("PORT", 64222);
+        IP1 = PlayerPrefs.GetInt("IP_1", 10);
+        IP2 = PlayerPrefs.GetInt("IP_2", 42);
+        IP3 = PlayerPrefs.GetInt("IP_3", 0);
+        IP4 = PlayerPrefs.GetInt("IP_4", 1);
+        port = PlayerPrefs.GetInt("PORT", 64205);
         host = IP1 + "." + IP2 + "." + IP3 + "." + IP4;
         IP_1_InputField.text = IP1.ToString();
         IP_2_InputField.text = IP2.ToString();

@@ -31,7 +31,7 @@ public class UDPReceive : MonoBehaviour
 
     void Start()
     {
-        R_port = PlayerPrefs.GetInt("R_PORT", 64276);
+        R_port = PlayerPrefs.GetInt("R_PORT", 64201);
         R_Port_InputField.text = R_port.ToString();
         R_PortNumber.text = R_port.ToString();
 
