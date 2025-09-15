@@ -27,7 +27,7 @@ public class UDPReceive : MonoBehaviour
     public int RL;
     public int RR;
 
-    private UdpClient udpClient;
+    private UdpClient client;
 
     void Start()
     {
@@ -35,8 +35,7 @@ public class UDPReceive : MonoBehaviour
         R_Port_InputField.text = R_port.ToString();
         R_PortNumber.text = R_port.ToString();
 
-        udpClient = new UdpClient(R_port);
-        udpClient.BeginReceive(OnReceived, udpClient);
+        OnConnect();
 
         Condition = "X=N, Y=N, R=N";
         ConversionCondition = "X=N, Y=N, R=N";
@@ -96,18 +95,23 @@ public class UDPReceive : MonoBehaviour
         }
     }
 
+    public void OnConnect()
+    {
+        client = new UdpClient(R_port);
+        client.BeginReceive(OnReceived, client);
+    }
 
     private void OnDestroy()
     {
-        udpClient.Close();
+        client.Close();
     }
 
     public void SetText()
     {
-        if (udpClient != null)
+        if (client != null)
         {
-            udpClient.Close();
-            udpClient = null;
+            client.Close();
+            client = null;
         }
 
         if (R_Port_InputField.text == "" || int.Parse(R_Port_InputField.text) >= 65536 || int.Parse(R_Port_InputField.text) <= -1)
@@ -122,7 +126,7 @@ public class UDPReceive : MonoBehaviour
         PlayerPrefs.SetInt("R_PORT", R_port);
         PlayerPrefs.Save();
 
-        udpClient = new UdpClient(R_port);
-        udpClient.BeginReceive(OnReceived, udpClient);
+        client = new UdpClient(R_port);
+        client.BeginReceive(OnReceived, client);
     }
 }

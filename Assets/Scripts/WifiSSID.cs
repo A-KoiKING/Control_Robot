@@ -7,6 +7,9 @@ public class WifiSSID : MonoBehaviour
     public TMP_Text ssidText;
     private string currentSSID = "";
 
+    public UDPSend UDPSend;
+    public UDPReceive UDPReceive;
+
     void Start()
     {
         InvokeRepeating(nameof(CheckWifiSSID), 0f, 4f);
@@ -62,8 +65,11 @@ public class WifiSSID : MonoBehaviour
         try
         {
             RunCommand("nmcli radio wifi off");
-            System.Threading.Thread.Sleep(2000); // 2秒待つ
+            System.Threading.Thread.Sleep(2000);
             RunCommand("nmcli radio wifi on");
+            System.Threading.Thread.Sleep(2000);
+            UDPSend.OnConnect();
+            UDPReceive.OnConnect();
         }
         catch (System.Exception e)
         {
