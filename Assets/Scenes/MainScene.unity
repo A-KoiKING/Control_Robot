@@ -1871,6 +1871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ssidText: {fileID: 812833592}
+  UDPSend: {fileID: 429669570}
+  UDPReceive: {fileID: 429669573}
 --- !u!1 &446968481
 GameObject:
   m_ObjectHideFlags: 0
