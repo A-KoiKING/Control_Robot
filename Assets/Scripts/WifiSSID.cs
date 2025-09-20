@@ -29,10 +29,12 @@ public class WifiSSID : MonoBehaviour
             }
         }
 
+        /*
         if (ssid != "hakorobo-box")
         {
             UnityEngine.Debug.Log("SSID is not hakorobo-box. Restarting Wi-Fi...");
         }
+        */
     }
 
     string GetWifiSSID()

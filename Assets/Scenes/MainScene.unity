@@ -1728,6 +1728,7 @@ GameObject:
   - component: {fileID: 429669573}
   - component: {fileID: 429669574}
   - component: {fileID: 429669575}
+  - component: {fileID: 429669576}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1767,7 +1768,8 @@ Transform:
   m_LocalPosition: {x: 235.47873, y: 172.42642, z: -18.928085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2032099926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &429669572
@@ -1873,6 +1875,20 @@ MonoBehaviour:
   ssidText: {fileID: 812833592}
   UDPSend: {fileID: 429669570}
   UDPReceive: {fileID: 429669573}
+--- !u!114 &429669576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429669569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc37a136b2b6d83da5a0a96c71b7e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serialHandler: {fileID: 2032099925}
+  inputControl: {fileID: 429669572}
 --- !u!1 &446968481
 GameObject:
   m_ObjectHideFlags: 0
@@ -6971,6 +6987,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007259915}
   m_CullTransparentMesh: 1
+--- !u!1 &2032099924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032099926}
+  - component: {fileID: 2032099925}
+  m_Layer: 0
+  m_Name: SerialHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032099925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032099924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c99abdaab2e1989eb601366cc20a00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portName: /dev/ttyACM0
+  baudRate: 9600
+--- !u!4 &2032099926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032099924}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429669571}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035653556
 GameObject:
   m_ObjectHideFlags: 0
