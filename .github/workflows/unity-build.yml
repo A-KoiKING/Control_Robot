@@ -1,0 +1,41 @@
+name: Unity Windows Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  buildWindows:
+    name: Build Unity Windows
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # UnityのLibraryをキャッシュしてビルド高速化
+      - name: Cache Library
+        uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ runner.os }}-${{ hashFiles('**/Packages/manifest.json') }}
+          restore-keys: |
+            Library-${{ runner.os }}-
+
+      # Unityプロジェクトをビルド
+      - name: Build Windows Player
+        uses: game-ci/unity-builder@v4
+        with:
+          targetPlatform: StandaloneWindows64
+          unityVersion: 2022.3.62f1   # ← おにいちゃんのUnityバージョンに変更！
+          projectPath: .
+
+      # ビルド成果物をZIPで保存
+      - name: Upload Build
+        uses: actions/upload-artifact@v3
+        with:
+          name: WindowsBuild
+          path: build/StandaloneWindows64
