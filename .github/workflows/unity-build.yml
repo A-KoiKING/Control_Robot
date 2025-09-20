@@ -35,7 +35,7 @@ jobs:
 
       # ビルド成果物をZIPで保存
       - name: Upload Build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: WindowsBuild
           path: build/StandaloneWindows64
