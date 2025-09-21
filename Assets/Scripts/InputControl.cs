@@ -21,6 +21,9 @@ public class InputControl : MonoBehaviour
     [SerializeField] private float _RightOutputValueX;
     [SerializeField] private float _RightOutputValueY;
 
+    [SerializeField] private float _L2Value;
+    [SerializeField] private float _R2Value;
+
     [SerializeField] private byte _buttonByte1 = 0;
     [SerializeField] private byte _buttonByte2 = 0;
     [SerializeField] private byte _buttonByte3 = 0;
@@ -126,11 +129,13 @@ public class InputControl : MonoBehaviour
         _gameInputs.Control.R1.performed += OnR1;
         _gameInputs.Control.R1.canceled += EndR1;
 
+        _gameInputs.Control.L2.started += OnL2;
         _gameInputs.Control.L2.performed += OnL2;
-        _gameInputs.Control.L2.canceled += EndL2;
+        _gameInputs.Control.L2.canceled += OnL2;
 
+        _gameInputs.Control.R2.started += OnR2;
         _gameInputs.Control.R2.performed += OnR2;
-        _gameInputs.Control.R2.canceled += EndR2;
+        _gameInputs.Control.R2.canceled += OnR2;
 
         _gameInputs.Control.Auto_1.performed += OnAuto1;
         _gameInputs.Control.Auto_1.canceled += EndAuto;
@@ -323,22 +328,28 @@ public class InputControl : MonoBehaviour
 
     private void OnL2(InputAction.CallbackContext context)
     {
-        SetButtonBit(ref _buttonByte2, BIT_L2, true);
-    }
-
-    private void EndL2(InputAction.CallbackContext context)
-    {
-        SetButtonBit(ref _buttonByte2, BIT_L2, false);
+        _L2Value = context.ReadValue<float>();
+        if (_L2Value > 0.1f)
+        {
+            SetButtonBit(ref _buttonByte2, BIT_L2, true);
+        }
+        else
+        {
+            SetButtonBit(ref _buttonByte2, BIT_L2, false);
+        }
     }
 
     private void OnR2(InputAction.CallbackContext context)
     {
-        SetButtonBit(ref _buttonByte2, BIT_R2, true);
-    }
-
-    private void EndR2(InputAction.CallbackContext context)
-    {
-        SetButtonBit(ref _buttonByte2, BIT_R2, false);
+        _R2Value = context.ReadValue<float>();
+        if (_R2Value > 0.1f)
+        {
+            SetButtonBit(ref _buttonByte2, BIT_R2, true);
+        }
+        else
+        {
+            SetButtonBit(ref _buttonByte2, BIT_R2, false);
+        }
     }
 
     private void OnAuto1(InputAction.CallbackContext context)

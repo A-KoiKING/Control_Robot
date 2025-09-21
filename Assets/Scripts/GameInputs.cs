@@ -219,21 +219,21 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""L2"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""5bbcd02b-14c9-4d9e-916b-5dba9471eda0"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Analog"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""R2"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""04492cc1-fd81-44ee-9ad9-e118019c49a8"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Analog"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Auto_1"",
