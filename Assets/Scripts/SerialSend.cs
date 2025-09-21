@@ -11,10 +11,10 @@ public class SerialSend : MonoBehaviour
 
     void Start()
     {
-
+        Time.fixedDeltaTime = 0.02f; // 20ms
     }
 
-    void Update()
+    void FixedUpdate()
     {
         string message = "s" + BitConverter.ToString(inputControl.dataToSend).Replace("-", "") + "\n";
         serialHandler.Write(message);

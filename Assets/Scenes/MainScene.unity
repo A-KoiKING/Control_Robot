@@ -7017,7 +7017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portName: /dev/ttyACM0
-  baudRate: 9600
+  baudRate: 115200
 --- !u!4 &2032099926
 Transform:
   m_ObjectHideFlags: 0
