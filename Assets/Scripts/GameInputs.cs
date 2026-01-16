@@ -113,7 +113,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Up"",
                     ""type"": ""Button"",
                     ""id"": ""7234b30b-a6b3-4dd0-9bcc-8d9f90c7c7ac"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -122,7 +122,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Left"",
                     ""type"": ""Button"",
                     ""id"": ""9b57f516-ac9d-4d43-9607-6a76358bf40e"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -131,7 +131,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Down"",
                     ""type"": ""Button"",
                     ""id"": ""9067e294-6d7a-4230-9a94-0bfd72d224af"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -140,7 +140,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Right"",
                     ""type"": ""Button"",
                     ""id"": ""2ba74024-1d42-414f-ae23-c9e378977213"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -149,7 +149,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Triangle"",
                     ""type"": ""Button"",
                     ""id"": ""a3626b38-5753-4f4a-a33f-7ad3701d53aa"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -158,7 +158,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Square"",
                     ""type"": ""Button"",
                     ""id"": ""f1e7f540-1d3c-4031-8107-817b2d839853"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -167,7 +167,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Cross"",
                     ""type"": ""Button"",
                     ""id"": ""b11189ac-dbc4-42b6-ac90-e6d4f9257b65"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -176,7 +176,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""Circle"",
                     ""type"": ""Button"",
                     ""id"": ""6cc40a80-b3a2-4b0a-96e7-e42258aed930"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -185,7 +185,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""LSB"",
                     ""type"": ""Button"",
                     ""id"": ""3ce2f33d-4700-4be1-b394-3c5444137785"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -194,7 +194,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""RSB"",
                     ""type"": ""Button"",
                     ""id"": ""c74aa357-6d98-4b25-89c4-994a0cb92682"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -203,7 +203,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""L1"",
                     ""type"": ""Button"",
                     ""id"": ""6bca530e-16d8-4334-92d0-2ac7615a84e9"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -212,7 +212,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""name"": ""R1"",
                     ""type"": ""Button"",
                     ""id"": ""508a6ee9-1249-42f7-abca-bcb1554ea256"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -394,7 +394,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4d02742b-6f52-43ea-a3a3-e5d46599374c"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -405,7 +405,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""339e1537-54ef-4b50-a60d-2ef7d55b8997"",
-                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -416,7 +416,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c82b2c16-a5e9-44a7-8957-c2e51b1b91c2"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -427,7 +427,7 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""a92aa534-ef6f-4696-a20b-aa8477031446"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

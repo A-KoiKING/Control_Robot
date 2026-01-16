@@ -248,12 +248,12 @@ public class InputControl : MonoBehaviour
 
     private void OnTriangle(InputAction.CallbackContext context)
     {
-        SetButtonBit(ref _buttonByte1, BIT_TRIANGLE, true);
+        //SetButtonBit(ref _buttonByte1, BIT_TRIANGLE, true);
     }
 
     private void EndTriangle(InputAction.CallbackContext context)
     {
-        SetButtonBit(ref _buttonByte1, BIT_TRIANGLE, false);
+        //SetButtonBit(ref _buttonByte1, BIT_TRIANGLE, false);
     }
 
     private void OnSquare(InputAction.CallbackContext context)

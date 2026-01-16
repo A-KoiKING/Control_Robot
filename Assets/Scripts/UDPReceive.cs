@@ -103,7 +103,11 @@ public class UDPReceive : MonoBehaviour
 
     private void OnDestroy()
     {
-        client.Close();
+        if (client != null)
+        {
+            client.Close();
+            client = null;
+        }
     }
 
     public void SetText()
